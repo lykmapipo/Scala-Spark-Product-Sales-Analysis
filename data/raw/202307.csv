@@ -1,0 +1,51 @@
+ProductName,Category,Price,Quantity,Date
+Laptop,Electronics,1200,5,2023-07-01
+Coffee Maker,Appliances,100,3,2023-07-01
+Running Shoes,Footwear,80,2,2023-07-02
+Smartphone,Electronics,800,8,2023-07-02
+Blender,Appliances,60,4,2023-07-03
+T-shirt,Apparel,20,10,2023-07-03
+Desk Chair,Furniture,150,2,2023-07-04
+Headphones,Electronics,150,5,2023-07-04
+Toaster,Appliances,40,6,2023-07-05
+Sunglasses,Accessories,30,3,2023-07-05
+Fitness Tracker,Electronics,60,7,2023-07-06
+Microwave,Appliances,80,4,2023-07-06
+Backpack,Accessories,50,5,2023-07-07
+Smartwatch,Electronics,200,3,2023-07-07
+Dining Table,Furniture,300,1,2023-07-08
+Sandals,Footwear,25,8,2023-07-08
+Coffee Grinder,Appliances,50,2,2023-07-09
+Hiking Boots,Footwear,120,4,2023-07-09
+TV,Electronics,700,3,2023-07-10
+Rice Cooker,Appliances,70,5,2023-07-10
+Jacket,Apparel,80,2,2023-07-11
+Vacuum Cleaner,Appliances,120,1,2023-07-11
+Desk,Furniture,200,3,2023-07-12
+Bluetooth Speaker,Electronics,40,6,2023-07-12
+Yoga Mat,Fitness,20,10,2023-07-13
+Refrigerator,Appliances,800,1,2023-07-13
+Jeans,Apparel,50,4,2023-07-14
+Air Purifier,Appliances,100,2,2023-07-14
+Printer,Electronics,80,3,2023-07-15
+Oven,Appliances,200,1,2023-07-15
+Dumbbells,Fitness,30,5,2023-07-16
+Mirror,Home Decor,50,2,2023-07-16
+Cycling Helmet,Outdoor,40,4,2023-07-17
+Washing Machine,Appliances,500,2,2023-07-17
+Shorts,Apparel,25,7,2023-07-18
+Desk Lamp,Home Decor,30,3,2023-07-18
+Gaming Console,Electronics,400,1,2023-07-19
+Teapot,Kitchenware,20,6,2023-07-19
+Umbrella,Accessories,15,8,2023-07-20
+Pillow,Home Decor,25,4,2023-07-20
+Camping Tent,Outdoor,100,2,2023-07-21
+Printer Ink,Office Supplies,15,5,2023-07-21
+Gaming Mouse,Electronics,50,3,2023-07-22
+Bicycle,Outdoor,300,1,2023-07-22
+Alarm Clock,Home Decor,10,10,2023-07-23
+Desk Organizer,Office Supplies,15,4,2023-07-23
+Laptop Stand,Office Furniture,40,2,2023-07-24
+Sneakers,Footwear,70,3,2023-07-24
+Water Bottle,Outdoor,10,12,2023-07-25
+Desk Fan,Appliances,20,6,2023-07-25

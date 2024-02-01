@@ -1,0 +1,32 @@
+ProductName,Category,Price,Quantity,Date
+Laptop,Electronics,1200,20,2023-06-01
+Smartphone,Electronics,800,30,2023-06-01
+Desk Chair,Furniture,150,15,2023-06-02
+Coffee Maker,Appliances,60,25,2023-06-03
+Running Shoes,Footwear,80,40,2023-06-04
+Headphones,Electronics,100,10,2023-06-05
+Desk,Furniture,200,12,2023-06-06
+Blender,Appliances,40,20,2023-06-07
+T-shirt,Apparel,20,50,2023-06-08
+Backpack,Accessories,30,25,2023-06-09
+Monitor,Electronics,300,15,2023-06-10
+Sofa,Furniture,500,8,2023-06-11
+Toaster,Appliances,25,30,2023-06-12
+Running Shorts,Apparel,15,35,2023-06-13
+Bookshelf,Furniture,120,10,2023-06-14
+Microwave,Appliances,80,15,2023-06-15
+Running Jacket,Apparel,50,20,2023-06-16
+Smartwatch,Electronics,150,18,2023-06-17
+Dining Table,Furniture,250,12,2023-06-18
+Blu-ray Player,Electronics,70,8,2023-06-19
+Bed, Furniture,700,5,2023-06-20
+Air Fryer,Appliances,90,10,2023-06-21
+Running Socks,Apparel,10,45,2023-06-22
+Couch,Furniture,600,7,2023-06-23
+Vacuum Cleaner,Appliances,120,12,2023-06-24
+Yoga Mat,Fitness,20,30,2023-06-25
+Handbag,Accessories,50,15,2023-06-26
+Printers,Electronics,180,8,2023-06-27
+Candle Holder,Home Decor,15,40,2023-06-28
+Hiking Boots,Footwear,120,10,2023-06-29
+Oven,Appliances,300,5,2023-06-30

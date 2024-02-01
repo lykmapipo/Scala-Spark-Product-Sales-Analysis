@@ -1,0 +1,51 @@
+ProductName,Category,Price,Quantity,Date
+Laptop,Electronics,1200,15,2023-02-01
+Smartphone,Electronics,800,25,2023-02-01
+Coffee Maker,Appliances,100,10,2023-02-02
+Blender,Appliances,60,20,2023-02-02
+Running Shoes,Apparel,80,30,2023-02-03
+T-shirt,Apparel,20,50,2023-02-03
+Headphones,Electronics,150,12,2023-02-04
+Toaster,Appliances,40,15,2023-02-04
+Desk Chair,Furniture,200,8,2023-02-05
+Couch,Furniture,500,5,2023-02-05
+Microwave,Appliances,80,10,2023-02-06
+Backpack,Accessories,30,40,2023-02-06
+Dumbbells,Fitness,50,20,2023-02-07
+Yoga Mat,Fitness,20,25,2023-02-07
+Sunglasses,Accessories,50,15,2023-02-08
+TV,Electronics,800,8,2023-02-08
+Cookware Set,Appliances,150,5,2023-02-09
+Bed, Furniture,700,3,2023-02-09
+Printer,Electronics,100,10,2023-02-10
+Desk,Furniture,150,7,2023-02-10
+Coffee Table,Furniture,80,12,2023-02-11
+Running Shorts,Apparel,30,40,2023-02-11
+Digital Camera,Electronics,300,5,2023-02-12
+Vacuum Cleaner,Appliances,120,8,2023-02-12
+Bluetooth Speaker,Electronics,70,15,2023-02-13
+Hiking Boots,Apparel,100,10,2023-02-13
+Portable Charger,Electronics,25,30,2023-02-14
+Water Bottle,Accessories,10,50,2023-02-14
+Desk Lamp,Home Decor,20,20,2023-02-15
+Throw Pillow,Home Decor,15,30,2023-02-15
+Gaming Console,Electronics,400,4,2023-02-16
+Waffle Maker,Appliances,50,10,2023-02-16
+Winter Jacket,Apparel,120,7,2023-02-17
+Bedside Table,Furniture,40,15,2023-02-17
+Fitness Tracker,Electronics,60,20,2023-02-18
+Umbrella,Accessories,15,25,2023-02-18
+Digital Watch,Accessories,50,12,2023-02-19
+Refrigerator,Appliances,800,2,2023-02-19
+Candles,Home Decor,10,40,2023-02-20
+Plant,Home Decor,25,10,2023-02-20
+Bluetooth Earbuds,Electronics,40,15,2023-02-21
+Hiking Backpack,Accessories,60,8,2023-02-21
+Air Purifier,Appliances,100,6,2023-02-22
+Wall Clock,Home Decor,30,12,2023-02-22
+Handheld Vacuum,Appliances,40,10,2023-02-23
+Gym Bag,Fitness,25,20,2023-02-23
+Jewelry Box,Accessories,15,15,2023-02-24
+Puzzle,Toys,10,30,2023-02-24
+Rolling Chair,Furniture,70,5,2023-02-25
+Desk Organizer,Office Supplies,20,25,2023-02-25

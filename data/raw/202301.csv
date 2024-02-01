@@ -1,0 +1,33 @@
+ProductName,Category,Price,Quantity,Date
+Smartphone,Electronics,800,3,2023-01-01
+Coffee Maker,Appliances,50,2,2023-01-01
+Dining Table,Furniture,300,1,2023-01-02
+Running Shoes,Apparel,80,5,2023-01-03
+Book,Books,15,10,2023-01-04
+LED TV,Electronics,1000,2,2023-01-05
+Blender,Appliances,40,3,2023-01-06
+T-shirt,Apparel,20,15,2023-01-07
+Headphones,Electronics,100,4,2023-01-08
+Office Chair,Furniture,120,2,2023-01-09
+Laptop,Electronics,1200,1,2023-01-10
+Toaster,Appliances,30,4,2023-01-11
+Sneakers,Apparel,90,6,2023-01-12
+Cookbook,Books,25,8,2023-01-13
+Digital Camera,Electronics,800,2,2023-01-14
+Sofa,Furniture,600,1,2023-01-15
+Yoga Mat,Sports and Outdoors,20,7,2023-01-16
+Microwave,Appliances,120,3,2023-01-17
+Winter Jacket,Apparel,150,4,2023-01-18
+Tablet,Electronics,500,2,2023-01-19
+Coffee Table,Furniture,200,1,2023-01-20
+Fitness Tracker,Sports and Outdoors,50,5,2023-01-21
+Vacuum Cleaner,Appliances,150,1,2023-01-22
+Jeans,Apparel,60,8,2023-01-23
+Gardening Tools,Garden and Outdoor Living,30,6,2023-01-24
+Gaming Console,Electronics,400,2,2023-01-25
+Baby Onesies,Baby and Nursery,15,10,2023-01-26
+Cooking Utensils,Kitchen,10,12,2023-01-27
+Puzzle,Toys and Games,20,5,2023-01-28
+Hair Dryer,Beauty and Personal Care,45,3,2023-01-29
+Desk Lamp,Home and Kitchen,25,4,2023-01-30
+Winter Boots,Apparel,70,2,2023-01-31

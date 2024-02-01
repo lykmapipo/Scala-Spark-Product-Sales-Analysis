@@ -1,0 +1,55 @@
+ProductName,Category,Price,Quantity,Date
+Laptop,Electronics,1200,15,2023-03-01
+Smartphone,Electronics,800,25,2023-03-01
+Coffee Maker,Appliances,100,10,2023-03-02
+Running Shoes,Apparel,80,30,2023-03-02
+Desk Chair,Furniture,150,20,2023-03-03
+Toaster,Appliances,40,15,2023-03-03
+Headphones,Electronics,50,40,2023-03-04
+Jeans,Apparel,60,35,2023-03-04
+Blender,Appliances,70,12,2023-03-05
+TV,Electronics,1000,8,2023-03-05
+Backpack,Accessories,30,18,2023-03-06
+Dining Table,Furniture,200,5,2023-03-06
+Microwave,Appliances,80,10,2023-03-07
+Hiking Boots,Apparel,90,22,2023-03-07
+Fitness Tracker,Electronics,60,15,2023-03-08
+T-shirt,Apparel,20,50,2023-03-08
+Blu-ray Player,Electronics,120,7,2023-03-09
+Couch,Furniture,500,3,2023-03-09
+Vacuum Cleaner,Appliances,150,8,2023-03-10
+Sneakers,Apparel,70,25,2023-03-10
+Coffee Table,Furniture,80,12,2023-03-11
+Tablet,Electronics,300,18,2023-03-11
+Toothbrush,Personal Care,10,40,2023-03-12
+Dress,Apparel,50,15,2023-03-12
+Refrigerator,Appliances,800,2,2023-03-13
+Gaming Console,Electronics,400,10,2023-03-13
+Desk,Furniture,120,7,2023-03-14
+Printer,Electronics,80,5,2023-03-14
+Air Purifier,Appliances,100,12,2023-03-15
+Yoga Mat,Fitness,20,20,2023-03-15
+Oven,Appliances,200,4,2023-03-16
+Watch,Accessories,150,8,2023-03-16
+Office Chair,Furniture,100,10,2023-03-17
+Hair Dryer,Personal Care,30,15,2023-03-17
+Sofa,Furniture,400,5,2023-03-18
+Digital Camera,Electronics,250,6,2023-03-18
+Iron,Appliances,40,20,2023-03-19
+Backpack,Accessories,25,30,2023-03-19
+Guitar,Musical Instruments,300,3,2023-03-20
+Water Bottle,Accessories,10,50,2023-03-20
+Dishwasher,Appliances,300,4,2023-03-21
+Running Shorts,Apparel,25,40,2023-03-21
+Smartwatch,Electronics,70,15,2023-03-22
+Bed, Furniture,600,2,2023-03-22
+Blow Dryer,Personal Care,25,10,2023-03-23
+Hiking Backpack,Accessories,40,8,2023-03-23
+Desk Lamp,Home Decor,15,25,2023-03-24
+Sunglasses,Accessories,30,20,2023-03-24
+Food Processor,Appliances,50,10,2023-03-25
+Umbrella,Accessories,15,30,2023-03-25
+Carpet,Furniture,80,5,2023-03-26
+Hand Mixer,Appliances,20,15,2023-03-26
+Electric Toothbrush,Personal Care,40,8,2023-03-27
+Running Jacket,Apparel,45,12,2023-03-27
