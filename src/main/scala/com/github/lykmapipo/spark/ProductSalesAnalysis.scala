@@ -5,7 +5,10 @@ import org.apache.spark.sql.{ SparkSession, DataFrame }
 import org.apache.spark.sql.{ functions => F }
 import org.apache.spark.sql.{ types => T }
 
+import com.github.lykmapipo.spark.analysis.{AggregationPerCategory}
+
 object ProductSalesAnalysis {
+
   def main(args: Array[String]): Unit = {
 
     // Create a Spark session
@@ -14,33 +17,27 @@ object ProductSalesAnalysis {
       .master("local[*]")
       .getOrCreate()
 
-    // Read product sales input CSV file(s) into a DataFrame
-    val inputPath = "data/raw/*.csv"
-    val rawDF = spark.read.option("header", "true").csv(inputPath)
-
-    // Cast input sales entries into their respective data types
-    val inputDF = rawDF.select(
-      F.col("ProductName").alias("ProductName").cast(T.StringType),
-      F.col("Category").alias("Category").cast(T.StringType),
-      F.col("Price").alias("Price").cast(T.DoubleType),
-      F.col("Quantity").alias("Quantity").cast(T.IntegerType),
-      F.col("Date").alias("Date").cast(T.DateType),
+    // Define product sales schema
+    val schema = T.StructType(
+      Array(
+        T.StructField("ProductName", T.StringType, nullable = false),
+        T.StructField("Category", T.StringType, nullable = false),
+        T.StructField("Price", T.DoubleType, nullable = false),
+        T.StructField("Quantity", T.IntegerType, nullable = false),
+        T.StructField("Date", T.DateType, nullable = false),
+      )
     )
 
-    // Calculate sales aggregation per category
-    val analysisDF = inputDF
+    // Read product sales input CSV file(s) into a DataFrame
+    val inputDF = spark.read
+      .schema(schema)
+      .option("header", "true")
+      .csv("data/raw/*.csv")
       .withColumn("Amount", F.col("Price") * F.col("Quantity"))
-      .groupBy(F.col("Category"))
-      .agg(
-        F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
-        F.sum(F.col("Amount")).as("TotalSalesAmount"),
-        F.avg(F.col("Amount")).as("AverageSalesAmount"),
-       )
 
-    // Write analyses results
-    analysisDF.printSchema()
-    val outputPath = "data/analyses/aggregate-sales-per-category"
-    analysisDF.coalesce(1).write.mode("overwrite").option("header", "true").csv(outputPath)
+    // Run product sales analyses
+    AggregationPerCategory.run(inputDF = inputDF)
+    // TODO: other analyses
 
     // Stop the Spark session
     spark.stop()
