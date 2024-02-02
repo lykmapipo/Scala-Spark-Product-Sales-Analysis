@@ -1,18 +1,22 @@
 package com.github.lykmapipo.spark
 
-import org.apache.spark.{ SparkContext }
-import org.apache.spark.sql.{ SparkSession, DataFrame }
-import org.apache.spark.sql.{ functions => F }
-import org.apache.spark.sql.{ types => T }
+import org.apache.spark.{SparkContext}
+import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.sql.{functions => F}
+import org.apache.spark.sql.{types => T}
 
-import com.github.lykmapipo.spark.analysis.{ AggregationPerCategory, AggregationPerProduct }
+import com.github.lykmapipo.spark.analysis.{
+  AggregationPerCategory,
+  AggregationPerProduct
+}
 
 object ProductSalesAnalysis {
 
   def main(args: Array[String]): Unit = {
 
     // Create a Spark session
-    val spark = SparkSession.builder()
+    val spark = SparkSession
+      .builder()
       .appName("scala-spark-product-sales-analysis")
       .master("local[*]")
       .getOrCreate()
@@ -24,7 +28,7 @@ object ProductSalesAnalysis {
         T.StructField("Category", T.StringType, nullable = false),
         T.StructField("Price", T.DoubleType, nullable = false),
         T.StructField("Quantity", T.IntegerType, nullable = false),
-        T.StructField("Date", T.DateType, nullable = false),
+        T.StructField("Date", T.DateType, nullable = false)
       )
     )
 

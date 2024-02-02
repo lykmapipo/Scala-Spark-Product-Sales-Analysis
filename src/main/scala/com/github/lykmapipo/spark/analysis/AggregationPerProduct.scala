@@ -1,7 +1,7 @@
 package com.github.lykmapipo.spark.analysis
 
-import org.apache.spark.sql.{ DataFrame }
-import org.apache.spark.sql.{ functions => F }
+import org.apache.spark.sql.{DataFrame}
+import org.apache.spark.sql.{functions => F}
 
 object AggregationPerProduct {
 
@@ -15,7 +15,7 @@ object AggregationPerProduct {
       .agg(
         F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
         F.sum(F.col("Amount")).as("TotalSalesAmount"),
-        F.avg(F.col("Amount")).as("AverageSalesAmount"),
+        F.avg(F.col("Amount")).as("AverageSalesAmount")
       )
       .orderBy(F.col("TotalSalesAmount").desc)
 

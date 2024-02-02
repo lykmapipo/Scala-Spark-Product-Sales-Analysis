@@ -1,4 +1,3 @@
-
 name := "scala-spark-product-sales-analysis"
 organization := "com.github.lykmapipo"
 version := "0.1.0"
