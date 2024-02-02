@@ -1,6 +1,6 @@
 # Scala-Spark-Product-Sales-Analysis
 
-Scala application to process, and analyze product sales files using Spark.
+Scala application to process, and analyze product sales using Spark.
 
 > 👋 This repository's maintainer is available to hire for Scala/Spark consulting projects. To get a cost estimate, send email to lallyelias87@gmail.com (for projects of any size or complexity).
 
@@ -37,6 +37,16 @@ root
  |-- Price: double (nullable = true)
  |-- Quantity: integer (nullable = true)
  |-- Date: date (nullable = true)
+```
+
+- Check [data/analyses/aggregate-sales-per-product](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-product) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
+
+```sh
+root
+ |-- ProductName: string (nullable = true)
+ |-- TotalSalesQuantity: long (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
+ |-- AverageSalesAmount: double (nullable = true)
 ```
 
 - Check [data/analyses/aggregate-sales-per-category](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-category) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
