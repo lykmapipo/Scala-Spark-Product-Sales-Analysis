@@ -3,15 +3,15 @@ package com.github.lykmapipo.spark.analysis
 import org.apache.spark.sql.{ DataFrame }
 import org.apache.spark.sql.{ functions => F }
 
-object AggregationPerCategory {
+object AggregationPerProduct {
 
   def run(inputDF: DataFrame): Unit = {
 
-    println("Start: Calculate sales aggregation per category")
+    println("Start: Calculate sales aggregation per product")
 
-    // Calculate sales aggregation per category
+    // Calculate sales aggregation per product
     val analysisDF = inputDF
-      .groupBy(F.col("Category"))
+      .groupBy(F.col("ProductName"))
       .agg(
         F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
         F.sum(F.col("Amount")).as("TotalSalesAmount"),
@@ -23,9 +23,9 @@ object AggregationPerCategory {
     analysisDF.write
       .mode("overwrite")
       .option("header", "true")
-      .csv("data/analyses/aggregate-sales-per-category")
+      .csv("data/analyses/aggregate-sales-per-product")
 
-    println("Finish: Calculate sales aggregation per category")
+    println("Finish: Calculate sales aggregation per product")
 
   }
 

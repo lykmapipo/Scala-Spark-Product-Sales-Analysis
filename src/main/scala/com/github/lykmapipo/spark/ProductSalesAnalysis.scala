@@ -5,7 +5,7 @@ import org.apache.spark.sql.{ SparkSession, DataFrame }
 import org.apache.spark.sql.{ functions => F }
 import org.apache.spark.sql.{ types => T }
 
-import com.github.lykmapipo.spark.analysis.{AggregationPerCategory}
+import com.github.lykmapipo.spark.analysis.{ AggregationPerCategory, AggregationPerProduct }
 
 object ProductSalesAnalysis {
 
@@ -36,6 +36,7 @@ object ProductSalesAnalysis {
       .withColumn("Amount", F.col("Price") * F.col("Quantity"))
 
     // Run product sales analyses
+    AggregationPerProduct.run(inputDF = inputDF)
     AggregationPerCategory.run(inputDF = inputDF)
     // TODO: other analyses
 
