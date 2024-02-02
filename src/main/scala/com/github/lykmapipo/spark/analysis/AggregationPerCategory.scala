@@ -7,9 +7,9 @@ object AggregationPerCategory {
 
   def run(inputDF: DataFrame): Unit = {
 
-  	println("Start: Calculate sales aggregation per category")
-  	
-  	// Calculate sales aggregation per category
+    println("Start: Calculate sales aggregation per category")
+
+    // Calculate sales aggregation per category
     val analysisDF = inputDF
       .groupBy(F.col("Category"))
       .agg(
@@ -25,6 +25,7 @@ object AggregationPerCategory {
       .csv("data/analyses/aggregate-sales-per-category")
 
     println("Finish: Calculate sales aggregation per category")
+
   }
 
 }
