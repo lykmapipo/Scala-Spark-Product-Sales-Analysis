@@ -14,8 +14,7 @@ object AggregationPerProduct {
       .groupBy(F.col("ProductName"))
       .agg(
         F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
-        F.sum(F.col("Amount")).as("TotalSalesAmount"),
-        F.avg(F.col("Amount")).as("AverageSalesAmount")
+        F.sum(F.col("Amount")).as("TotalSalesAmount")
       )
       .orderBy(F.col("TotalSalesAmount").desc)
 

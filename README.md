@@ -39,16 +39,6 @@ root
  |-- Date: date (nullable = true)
 ```
 
-- Check [data/analyses/aggregate-sales-per-product](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-product) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
-
-```sh
-root
- |-- ProductName: string (nullable = true)
- |-- TotalSalesQuantity: long (nullable = true)
- |-- TotalSalesAmount: double (nullable = true)
- |-- AverageSalesAmount: double (nullable = true)
-```
-
 - Check [data/analyses/aggregate-sales-per-category](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-category) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
 
 ```sh
@@ -56,7 +46,24 @@ root
  |-- Category: string (nullable = true)
  |-- TotalSalesQuantity: long (nullable = true)
  |-- TotalSalesAmount: double (nullable = true)
- |-- AverageSalesAmount: double (nullable = true)
+```
+
+- Check [data/analyses/aggregate-sales-per-date](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-date) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
+
+```sh
+root
+ |-- Date: date (nullable = true)
+ |-- TotalSalesQuantity: long (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
+```
+
+- Check [data/analyses/aggregate-sales-per-product](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-product) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
+
+```sh
+root
+ |-- ProductName: string (nullable = true)
+ |-- TotalSalesQuantity: long (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
 ```
 
 

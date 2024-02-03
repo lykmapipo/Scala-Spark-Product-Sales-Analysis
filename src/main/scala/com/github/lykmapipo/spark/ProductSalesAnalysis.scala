@@ -7,6 +7,7 @@ import org.apache.spark.sql.{types => T}
 
 import com.github.lykmapipo.spark.analysis.{
   AggregationPerCategory,
+  AggregationPerDate,
   AggregationPerProduct
 }
 
@@ -40,8 +41,9 @@ object ProductSalesAnalysis {
       .withColumn("Amount", F.col("Price") * F.col("Quantity"))
 
     // Run product sales analyses
-    AggregationPerProduct.run(inputDF = inputDF)
     AggregationPerCategory.run(inputDF = inputDF)
+    AggregationPerDate.run(inputDF = inputDF)
+    AggregationPerProduct.run(inputDF = inputDF)
     // TODO: other analyses
 
     // Stop the Spark session
