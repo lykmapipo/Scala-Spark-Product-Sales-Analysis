@@ -16,6 +16,10 @@ object AggregationPerProduct {
         F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
         F.sum(F.col("Amount")).as("TotalSalesAmount")
       )
+      .withColumn(
+        "AverageSellingPrice",
+        F.col("TotalSalesAmount") / F.col("TotalSalesQuantity")
+      )
       .orderBy(F.col("TotalSalesAmount").desc)
 
     // Write analysis results

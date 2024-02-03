@@ -64,6 +64,7 @@ root
  |-- ProductName: string (nullable = true)
  |-- TotalSalesQuantity: long (nullable = true)
  |-- TotalSalesAmount: double (nullable = true)
+ |-- AverageSellingPrice: double (nullable = true)
 ```
 
 
