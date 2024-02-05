@@ -39,7 +39,16 @@ root
  |-- Date: date (nullable = true)
 ```
 
-- Check [data/analyses/aggregate-sales-per-category](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-category) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
+- Check [data/analyses/aggregate-overall](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-overall) directory for `output` data generated when run [AggregationOverall.scala](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/AggregationOverall.scala) analysis. Each file is in `csv format`, and each entry follow below `spark` schema:
+
+```sh
+root
+ |-- TotalSalesQuantity: long (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
+ |-- TotalSalesDay: long (nullable = false)
+```
+
+- Check [data/analyses/aggregate-sales-per-category](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-category) directory for `output` data generated when run [AggregationPerCategory.scala](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/AggregationPerCategory.scala) analysis. Each file is in `csv format`, and each entry follow below `spark` schema:
 
 ```sh
 root
@@ -48,7 +57,7 @@ root
  |-- TotalSalesAmount: double (nullable = true)
 ```
 
-- Check [data/analyses/aggregate-sales-per-date](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-date) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
+- Check [data/analyses/aggregate-sales-per-date](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-date) directory for `output` data generated when run [AggregationPerDate.scala](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/AggregationPerDate.scala). Each file is in `csv format`, and each entry follow below `spark` schema:
 
 ```sh
 root
@@ -57,7 +66,7 @@ root
  |-- TotalSalesAmount: double (nullable = true)
 ```
 
-- Check [data/analyses/aggregate-sales-per-product](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-product) directory for `output` data generated when run `sbt run`. Each file is in `csv format`, and each entry follow below `spark` schema:
+- Check [data/analyses/aggregate-sales-per-product](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-product) directory for `output` data generated when run [AggregationPerProduct.scala](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/AggregationPerProduct.scala). Each file is in `csv format`, and each entry follow below `spark` schema:
 
 ```sh
 root

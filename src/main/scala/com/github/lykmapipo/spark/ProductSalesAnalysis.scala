@@ -6,6 +6,7 @@ import org.apache.spark.sql.{functions => F}
 import org.apache.spark.sql.{types => T}
 
 import com.github.lykmapipo.spark.analysis.{
+  AggregationOverall,
   AggregationPerCategory,
   AggregationPerDate,
   AggregationPerProduct
@@ -41,6 +42,7 @@ object ProductSalesAnalysis {
       .withColumn("Amount", F.col("Price") * F.col("Quantity"))
 
     // Run product sales analyses
+    AggregationOverall.run(inputDF = inputDF)
     AggregationPerCategory.run(inputDF = inputDF)
     AggregationPerDate.run(inputDF = inputDF)
     AggregationPerProduct.run(inputDF = inputDF)
