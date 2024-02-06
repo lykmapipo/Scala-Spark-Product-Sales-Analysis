@@ -14,7 +14,7 @@ object AggregationOverall {
       .agg(
         F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
         F.sum(F.col("Amount")).as("TotalSalesAmount"),
-        F.countDistinct(F.col("Date")).alias("TotalSalesDay")
+        F.countDistinct(F.col("Date")).as("TotalSalesDay")
       )
 
     // Write analysis results
