@@ -15,8 +15,16 @@ object RunningTotalOverall {
       .orderBy(F.col("Date"))
       .rowsBetween(Window.unboundedPreceding, 0)
 
+    // Handle repetitive dates by aggregating data for each unique date
+    val aggregatedInputDF = inputDF
+      .groupBy(F.col("Date"))
+      .agg(
+        F.sum(F.col("Quantity")).as("Quantity"),
+        F.sum(F.col("Amount")).as("Amount")
+      )
+
     // Calculate sales overall running totals
-    val analysisDF = inputDF
+    val analysisDF = aggregatedInputDF
       .select(
         F.col("Date").as("Date"),
         F.col("Quantity").as("Quantity"),
