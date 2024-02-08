@@ -30,9 +30,19 @@ git clone https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis.git
 cd Scala-Spark-Product-Sales-Analysis
 ```
 
-- To perform `product sales analysis`, run:
+- To perform `product sales analysis` with `sbt`, run:
 ```sh
 sbt run
+```
+
+- To perform `product sales analysis` with `spark-submit`, run:
+```sh
+sbt assembly
+
+spark-submit \
+     --class com.github.lykmapipo.spark.ProductSalesAnalysis \
+     --master <your_spark_master> \
+     target/scala-2.13/scala-spark-product-sales-analysis-assembly-0.1.0.jar
 ```
 
 
