@@ -1,0 +1,5 @@
+Date,Quantity,Amount,RollingAverageSalesQuantity,RollingAverageSalesAmount
+2023-07-17,4,160.0,4.0,160.0
+2023-07-21,2,200.0,3.0,180.0
+2023-07-22,1,300.0,2.3333333333333335,220.0
+2023-07-25,12,120.0,4.75,195.0

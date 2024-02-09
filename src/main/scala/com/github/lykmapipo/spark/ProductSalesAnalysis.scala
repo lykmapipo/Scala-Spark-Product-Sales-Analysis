@@ -11,6 +11,7 @@ import com.github.lykmapipo.spark.analysis.{
   AggregationPerDate,
   AggregationPerProduct,
   RollingAverageOverall,
+  RollingAveragePerCategory,
   RunningTotalOverall,
   RunningTotalPerCategory
 }
@@ -50,6 +51,7 @@ object ProductSalesAnalysis {
     AggregationPerDate.run(inputDF = inputDF)
     AggregationPerProduct.run(inputDF = inputDF)
     RollingAverageOverall.run(inputDF = inputDF)
+    RollingAveragePerCategory.run(inputDF = inputDF)
     RunningTotalOverall.run(inputDF = inputDF)
     RunningTotalPerCategory.run(inputDF = inputDF)
     // TODO: other analyses

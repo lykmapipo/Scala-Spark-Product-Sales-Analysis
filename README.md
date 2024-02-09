@@ -8,7 +8,7 @@ These include:
 
 2. Running Totals: [Overall](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/RunningTotalOverall.scala), [Per Category](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/RunningTotalPerCategory.scala)
 
-3. Rolling Averages: [Overall](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/RollingAverageOverall.scala)
+3. Rolling Averages: [Overall](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/RollingAverageOverall.scala), [Per Category](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/RollingAveragePerCategory.scala)
 
 
 > 👋 This repository's maintainer is available to hire for Scala/Spark consulting projects. To get a cost estimate, send email to lallyelias87@gmail.com (for projects of any size or complexity).
