@@ -1,0 +1,5 @@
+Date,Quantity,Amount,RunningTotalSalesQuantity,RunningTotalSalesAmount
+2023-01-24,6,180.0,6,180.0
+2023-04-25,6,180.0,12,360.0
+2023-05-25,6,180.0,18,540.0
+2023-09-24,6,180.0,24,720.0
