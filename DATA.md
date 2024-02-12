@@ -33,6 +33,7 @@ root
  |-- Category: string (nullable = true)
  |-- TotalSalesQuantity: long (nullable = true)
  |-- TotalSalesAmount: double (nullable = true)
+ |-- TotalSalesDay: long (nullable = false)
 ```
 
 - Check [data/analyses/aggregate-sales-per-date](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/tree/main/data/analyses/aggregate-sales-per-date) directory for `output` data generated when run [AggregationPerDate.scala](https://github.com/lykmapipo/Scala-Spark-Product-Sales-Analysis/blob/main/src/main/scala/com/github/lykmapipo/spark/analysis/AggregationPerDate.scala). Each file is in `csv format`, and each entry follow below `spark` schema:
@@ -51,6 +52,7 @@ root
  |-- ProductName: string (nullable = true)
  |-- TotalSalesQuantity: long (nullable = true)
  |-- TotalSalesAmount: double (nullable = true)
+ |-- TotalSalesDay: long (nullable = false)
  |-- AverageSellingPrice: double (nullable = true)
 ```
 
@@ -62,8 +64,8 @@ root
 ```sh
 root
  |-- Date: date (nullable = true)
- |-- Quantity: integer (nullable = true)
- |-- Amount: double (nullable = true)
+ |-- TotalSalesQuantity: integer (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
  |-- RunningTotalSalesQuantity: long (nullable = true)
  |-- RunningTotalSalesAmount: double (nullable = true)
 ```
@@ -73,8 +75,8 @@ root
 ```sh
 root
  |-- Date: date (nullable = true)
- |-- Quantity: integer (nullable = true)
- |-- Amount: double (nullable = true)
+ |-- TotalSalesQuantity: integer (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
  |-- RunningTotalSalesQuantity: long (nullable = true)
  |-- RunningTotalSalesAmount: double (nullable = true)
 ```
@@ -87,8 +89,8 @@ root
 ```sh
 root
  |-- Date: date (nullable = true)
- |-- Quantity: integer (nullable = true)
- |-- Amount: double (nullable = true)
+ |-- TotalSalesQuantity: integer (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
  |-- RollingAverageSalesQuantity: double (nullable = true)
  |-- RollingAverageSalesAmount: double (nullable = true)
 ```
@@ -98,8 +100,8 @@ root
 ```sh
 root
  |-- Date: date (nullable = true)
- |-- Quantity: integer (nullable = true)
- |-- Amount: double (nullable = true)
+ |-- TotalSalesQuantity: integer (nullable = true)
+ |-- TotalSalesAmount: double (nullable = true)
  |-- RollingAverageSalesQuantity: double (nullable = true)
  |-- RollingAverageSalesAmount: double (nullable = true)
 ```

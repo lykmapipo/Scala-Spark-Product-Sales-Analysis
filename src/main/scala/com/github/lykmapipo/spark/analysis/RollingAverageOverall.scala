@@ -20,20 +20,22 @@ object RollingAverageOverall {
     val aggregatedInputDF = inputDF
       .groupBy(F.col("Date"))
       .agg(
-        F.sum(F.col("Quantity")).as("Quantity"),
-        F.sum(F.col("Amount")).as("Amount")
+        F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
+        F.sum(F.col("Amount")).as("TotalSalesAmount")
       )
 
     // Calculate sales overall rolling averages
     val analysisDF = aggregatedInputDF
       .select(
         F.col("Date").as("Date"),
-        F.col("Quantity").as("Quantity"),
-        F.col("Amount").as("Amount"),
-        F.avg(F.col("Quantity"))
+        F.col("TotalSalesQuantity").as("TotalSalesQuantity"),
+        F.col("TotalSalesAmount").as("TotalSalesAmount"),
+        F.avg(F.col("TotalSalesQuantity"))
           .over(windowSpec)
           .as("RollingAverageSalesQuantity"),
-        F.avg(F.col("Amount")).over(windowSpec).as("RollingAverageSalesAmount")
+        F.avg(F.col("TotalSalesAmount"))
+          .over(windowSpec)
+          .as("RollingAverageSalesAmount")
       )
 
     // Write analysis results

@@ -14,7 +14,8 @@ object AggregationPerCategory {
       .groupBy(F.col("Category"))
       .agg(
         F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
-        F.sum(F.col("Amount")).as("TotalSalesAmount")
+        F.sum(F.col("Amount")).as("TotalSalesAmount"),
+        F.countDistinct(F.col("Date")).as("TotalSalesDay")
       )
       .orderBy(F.col("TotalSalesAmount").desc)
 

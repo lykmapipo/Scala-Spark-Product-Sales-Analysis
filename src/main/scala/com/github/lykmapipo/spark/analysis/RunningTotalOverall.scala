@@ -19,20 +19,22 @@ object RunningTotalOverall {
     val aggregatedInputDF = inputDF
       .groupBy(F.col("Date"))
       .agg(
-        F.sum(F.col("Quantity")).as("Quantity"),
-        F.sum(F.col("Amount")).as("Amount")
+        F.sum(F.col("Quantity")).as("TotalSalesQuantity"),
+        F.sum(F.col("Amount")).as("TotalSalesAmount")
       )
 
     // Calculate sales overall running totals
     val analysisDF = aggregatedInputDF
       .select(
         F.col("Date").as("Date"),
-        F.col("Quantity").as("Quantity"),
-        F.col("Amount").as("Amount"),
-        F.sum(F.col("Quantity"))
+        F.col("TotalSalesQuantity").as("TotalSalesQuantity"),
+        F.col("TotalSalesAmount").as("TotalSalesAmount"),
+        F.sum(F.col("TotalSalesQuantity"))
           .over(windowSpec)
           .as("RunningTotalSalesQuantity"),
-        F.sum(F.col("Amount")).over(windowSpec).as("RunningTotalSalesAmount")
+        F.sum(F.col("TotalSalesAmount"))
+          .over(windowSpec)
+          .as("RunningTotalSalesAmount")
       )
 
     // Write analysis results
